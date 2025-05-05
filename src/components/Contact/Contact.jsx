@@ -103,7 +103,7 @@ const Contact = () => {
               <FaEnvelope /> Email
             </ContactLink>
             <ContactLink
-              href="#"
+              href="https://github.com/CodeLab66"
               target="_blank"
               rel="noopener noreferrer"
               initial={{ opacity: 0, y: 20 }}

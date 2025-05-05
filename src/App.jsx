@@ -9,6 +9,7 @@ import Certifications from './components/Certifications/Certifications';
 import Contact from './components/Contact/Contact';
 
 const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
   * {
     margin: 0;
     padding: 0;

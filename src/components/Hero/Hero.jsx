@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 const HeroContainer = styled.div`
-  background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+  background: linear-gradient(135deg,rgb(51, 50, 50) 0%,rgb(21, 19, 19) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,7 +139,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.7 }}
         >
-          Passionate about building intelligent systems, scalable web applications, and e-commerce solutions
+          Passionate about building intelligent systems, scalable web applications, mobile applications and e-commerce solutions
         </HeroP>
       </HeroContent>
     </HeroContainer>

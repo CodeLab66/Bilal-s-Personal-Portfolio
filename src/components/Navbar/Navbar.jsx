@@ -4,8 +4,10 @@ import { Link } from 'react-scroll';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Nav = styled.nav`
-  background: #1a1a1a;
-  height: 80px;
+  background: rgba(6, 66, 2, 0.51);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  height: 85px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,7 +15,7 @@ const Nav = styled.nav`
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 `;
 
 const NavbarContainer = styled.div`
@@ -30,11 +32,18 @@ const NavLogo = styled.div`
   color: #fff;
   justify-self: flex-start;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   font-weight: bold;
   text-decoration: none;
+  font-family: 'Dancing Script', cursive;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 `;
 
 const MobileIcon = styled.div`
@@ -66,7 +75,9 @@ const NavMenu = styled.ul`
     position: absolute;
     top: 80px;
     left: 0;
-    background: #1a1a1a;
+    background: rgba(26, 26, 26, 0.95);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
     padding-top: 30px;
   }
 `;
@@ -120,7 +131,7 @@ const Navbar = () => {
       <NavbarContainer>
         <NavLogo>
           <Link to="home" smooth={true} duration={500} spy={true} exact="true" offest={-120}>
-            Bilal's Portfolio
+            Portfolio
           </Link>
         </NavLogo>
         <MobileIcon onClick={toggle}>
